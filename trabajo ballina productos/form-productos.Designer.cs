@@ -1,16 +1,16 @@
 ﻿namespace trabajo_ballina_productos
 {
-    partial class Form1
+    partial class form_productos
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,24 +20,25 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_productos));
             System.Windows.Forms.Label idLabel;
+            System.Windows.Forms.Label nu_categoriaLabel;
             System.Windows.Forms.Label nombreLabel;
-            System.Windows.Forms.Label nu_productoLabel;
+            System.Windows.Forms.Label descripcionLabel;
             this.postgresDataSet = new trabajo_ballina_productos.postgresDataSet();
-            this.categoriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.categoriasTableAdapter = new trabajo_ballina_productos.postgresDataSetTableAdapters.categoriasTableAdapter();
+            this.productosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productosTableAdapter = new trabajo_ballina_productos.postgresDataSetTableAdapters.productosTableAdapter();
             this.tableAdapterManager = new trabajo_ballina_productos.postgresDataSetTableAdapters.TableAdapterManager();
-            this.categoriasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.productosBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -49,20 +50,19 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.categoriasBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.productosBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.idTextBox = new System.Windows.Forms.TextBox();
+            this.nu_categoriaTextBox = new System.Windows.Forms.TextBox();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
-            this.entradasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.entradasTableAdapter = new trabajo_ballina_productos.postgresDataSetTableAdapters.entradasTableAdapter();
-            this.nu_productoTextBox = new System.Windows.Forms.TextBox();
+            this.descripcionTextBox = new System.Windows.Forms.TextBox();
             idLabel = new System.Windows.Forms.Label();
+            nu_categoriaLabel = new System.Windows.Forms.Label();
             nombreLabel = new System.Windows.Forms.Label();
-            nu_productoLabel = new System.Windows.Forms.Label();
+            descripcionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.postgresDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriasBindingNavigator)).BeginInit();
-            this.categoriasBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.entradasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productosBindingNavigator)).BeginInit();
+            this.productosBindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
             // postgresDataSet
@@ -70,32 +70,32 @@
             this.postgresDataSet.DataSetName = "postgresDataSet";
             this.postgresDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // categoriasBindingSource
+            // productosBindingSource
             // 
-            this.categoriasBindingSource.DataMember = "categorias";
-            this.categoriasBindingSource.DataSource = this.postgresDataSet;
+            this.productosBindingSource.DataMember = "productos";
+            this.productosBindingSource.DataSource = this.postgresDataSet;
             // 
-            // categoriasTableAdapter
+            // productosTableAdapter
             // 
-            this.categoriasTableAdapter.ClearBeforeFill = true;
+            this.productosTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.categoriasTableAdapter = this.categoriasTableAdapter;
-            this.tableAdapterManager.entradasTableAdapter = this.entradasTableAdapter;
+            this.tableAdapterManager.categoriasTableAdapter = null;
+            this.tableAdapterManager.entradasTableAdapter = null;
             this.tableAdapterManager.inventariosTableAdapter = null;
-            this.tableAdapterManager.productosTableAdapter = null;
+            this.tableAdapterManager.productosTableAdapter = this.productosTableAdapter;
             this.tableAdapterManager.ubicacionesTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = trabajo_ballina_productos.postgresDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // categoriasBindingNavigator
+            // productosBindingNavigator
             // 
-            this.categoriasBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.categoriasBindingNavigator.BindingSource = this.categoriasBindingSource;
-            this.categoriasBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.categoriasBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.categoriasBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.productosBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.productosBindingNavigator.BindingSource = this.productosBindingSource;
+            this.productosBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.productosBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.productosBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -107,17 +107,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.categoriasBindingNavigatorSaveItem});
-            this.categoriasBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.categoriasBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.categoriasBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.categoriasBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.categoriasBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.categoriasBindingNavigator.Name = "categoriasBindingNavigator";
-            this.categoriasBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.categoriasBindingNavigator.Size = new System.Drawing.Size(691, 25);
-            this.categoriasBindingNavigator.TabIndex = 0;
-            this.categoriasBindingNavigator.Text = "bindingNavigator1";
+            this.productosBindingNavigatorSaveItem});
+            this.productosBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.productosBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.productosBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.productosBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.productosBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.productosBindingNavigator.Name = "productosBindingNavigator";
+            this.productosBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.productosBindingNavigator.Size = new System.Drawing.Size(800, 25);
+            this.productosBindingNavigator.TabIndex = 0;
+            this.productosBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -204,96 +204,105 @@
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
-            // categoriasBindingNavigatorSaveItem
+            // productosBindingNavigatorSaveItem
             // 
-            this.categoriasBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.categoriasBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("categoriasBindingNavigatorSaveItem.Image")));
-            this.categoriasBindingNavigatorSaveItem.Name = "categoriasBindingNavigatorSaveItem";
-            this.categoriasBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
-            this.categoriasBindingNavigatorSaveItem.Text = "Guardar datos";
-            this.categoriasBindingNavigatorSaveItem.Click += new System.EventHandler(this.categoriasBindingNavigatorSaveItem_Click);
+            this.productosBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.productosBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("productosBindingNavigatorSaveItem.Image")));
+            this.productosBindingNavigatorSaveItem.Name = "productosBindingNavigatorSaveItem";
+            this.productosBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.productosBindingNavigatorSaveItem.Text = "Guardar datos";
+            this.productosBindingNavigatorSaveItem.Click += new System.EventHandler(this.productosBindingNavigatorSaveItem_Click);
             // 
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(104, 87);
+            idLabel.Location = new System.Drawing.Point(45, 54);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(18, 13);
-            idLabel.TabIndex = 2;
+            idLabel.TabIndex = 1;
             idLabel.Text = "id:";
             // 
             // idTextBox
             // 
-            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoriasBindingSource, "id", true));
-            this.idTextBox.Location = new System.Drawing.Point(128, 87);
+            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productosBindingSource, "id", true));
+            this.idTextBox.Location = new System.Drawing.Point(120, 51);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(100, 20);
-            this.idTextBox.TabIndex = 3;
+            this.idTextBox.TabIndex = 2;
+            // 
+            // nu_categoriaLabel
+            // 
+            nu_categoriaLabel.AutoSize = true;
+            nu_categoriaLabel.Location = new System.Drawing.Point(45, 80);
+            nu_categoriaLabel.Name = "nu_categoriaLabel";
+            nu_categoriaLabel.Size = new System.Drawing.Size(69, 13);
+            nu_categoriaLabel.TabIndex = 3;
+            nu_categoriaLabel.Text = "nu categoria:";
+            // 
+            // nu_categoriaTextBox
+            // 
+            this.nu_categoriaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productosBindingSource, "nu_categoria", true));
+            this.nu_categoriaTextBox.Location = new System.Drawing.Point(120, 77);
+            this.nu_categoriaTextBox.Name = "nu_categoriaTextBox";
+            this.nu_categoriaTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nu_categoriaTextBox.TabIndex = 4;
             // 
             // nombreLabel
             // 
             nombreLabel.AutoSize = true;
-            nombreLabel.Location = new System.Drawing.Point(77, 126);
+            nombreLabel.Location = new System.Drawing.Point(45, 106);
             nombreLabel.Name = "nombreLabel";
             nombreLabel.Size = new System.Drawing.Size(45, 13);
-            nombreLabel.TabIndex = 3;
+            nombreLabel.TabIndex = 5;
             nombreLabel.Text = "nombre:";
             // 
             // nombreTextBox
             // 
-            this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoriasBindingSource, "nombre", true));
-            this.nombreTextBox.Location = new System.Drawing.Point(128, 123);
+            this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productosBindingSource, "nombre", true));
+            this.nombreTextBox.Location = new System.Drawing.Point(120, 103);
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(100, 20);
-            this.nombreTextBox.TabIndex = 4;
+            this.nombreTextBox.TabIndex = 6;
             // 
-            // entradasBindingSource
+            // descripcionLabel
             // 
-            this.entradasBindingSource.DataMember = "entradas";
-            this.entradasBindingSource.DataSource = this.postgresDataSet;
+            descripcionLabel.AutoSize = true;
+            descripcionLabel.Location = new System.Drawing.Point(45, 132);
+            descripcionLabel.Name = "descripcionLabel";
+            descripcionLabel.Size = new System.Drawing.Size(64, 13);
+            descripcionLabel.TabIndex = 7;
+            descripcionLabel.Text = "descripcion:";
             // 
-            // entradasTableAdapter
+            // descripcionTextBox
             // 
-            this.entradasTableAdapter.ClearBeforeFill = true;
+            this.descripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productosBindingSource, "descripcion", true));
+            this.descripcionTextBox.Location = new System.Drawing.Point(120, 129);
+            this.descripcionTextBox.Name = "descripcionTextBox";
+            this.descripcionTextBox.Size = new System.Drawing.Size(100, 20);
+            this.descripcionTextBox.TabIndex = 8;
             // 
-            // nu_productoLabel
-            // 
-            nu_productoLabel.AutoSize = true;
-            nu_productoLabel.Location = new System.Drawing.Point(55, 166);
-            nu_productoLabel.Name = "nu_productoLabel";
-            nu_productoLabel.Size = new System.Drawing.Size(67, 13);
-            nu_productoLabel.TabIndex = 5;
-            nu_productoLabel.Text = "nu producto:";
-            // 
-            // nu_productoTextBox
-            // 
-            this.nu_productoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.entradasBindingSource, "nu_producto", true));
-            this.nu_productoTextBox.Location = new System.Drawing.Point(128, 163);
-            this.nu_productoTextBox.Name = "nu_productoTextBox";
-            this.nu_productoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.nu_productoTextBox.TabIndex = 6;
-            // 
-            // Form1
+            // form_productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 422);
-            this.Controls.Add(nu_productoLabel);
-            this.Controls.Add(this.nu_productoTextBox);
-            this.Controls.Add(nombreLabel);
-            this.Controls.Add(this.nombreTextBox);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(idLabel);
             this.Controls.Add(this.idTextBox);
-            this.Controls.Add(this.categoriasBindingNavigator);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Controls.Add(nu_categoriaLabel);
+            this.Controls.Add(this.nu_categoriaTextBox);
+            this.Controls.Add(nombreLabel);
+            this.Controls.Add(this.nombreTextBox);
+            this.Controls.Add(descripcionLabel);
+            this.Controls.Add(this.descripcionTextBox);
+            this.Controls.Add(this.productosBindingNavigator);
+            this.Name = "form_productos";
+            this.Text = "form_productos";
+            this.Load += new System.EventHandler(this.form_productos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.postgresDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriasBindingNavigator)).EndInit();
-            this.categoriasBindingNavigator.ResumeLayout(false);
-            this.categoriasBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.entradasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productosBindingNavigator)).EndInit();
+            this.productosBindingNavigator.ResumeLayout(false);
+            this.productosBindingNavigator.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,10 +311,10 @@
         #endregion
 
         private postgresDataSet postgresDataSet;
-        private System.Windows.Forms.BindingSource categoriasBindingSource;
-        private postgresDataSetTableAdapters.categoriasTableAdapter categoriasTableAdapter;
+        private System.Windows.Forms.BindingSource productosBindingSource;
+        private postgresDataSetTableAdapters.productosTableAdapter productosTableAdapter;
         private postgresDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator categoriasBindingNavigator;
+        private System.Windows.Forms.BindingNavigator productosBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -317,12 +326,10 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton categoriasBindingNavigatorSaveItem;
-        private postgresDataSetTableAdapters.entradasTableAdapter entradasTableAdapter;
+        private System.Windows.Forms.ToolStripButton productosBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox idTextBox;
+        private System.Windows.Forms.TextBox nu_categoriaTextBox;
         private System.Windows.Forms.TextBox nombreTextBox;
-        private System.Windows.Forms.BindingSource entradasBindingSource;
-        private System.Windows.Forms.TextBox nu_productoTextBox;
+        private System.Windows.Forms.TextBox descripcionTextBox;
     }
 }
-
